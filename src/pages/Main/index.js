@@ -60,7 +60,7 @@ class Main extends Component {
     const response = await api.get(`/users/${newUser}`);
 
     const data = {
-      name: response.data.user,
+      name: response.data.name,
       login: response.data.login,
       bio: response.data.bio,
       avatar: response.data.avatar_url,
